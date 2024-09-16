@@ -1,7 +1,7 @@
 ## Team: Heavy Coders
-- **Pratham Bisht**
-- **Keshav Kushwaha**
-- **Ritik Gupta**
+- **Pratham Bisht**      (https://github.com/Pratham216)
+- **Keshav Kushwaha**    (https://github.com/offline-keshav)
+- **Ritik Gupta**        (https://github.com/guptaritik17)
 
 
 ---
