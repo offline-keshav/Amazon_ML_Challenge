@@ -1,9 +1,3 @@
-Here's the updated documentation with the team name included:
-
----
-
-# Documentation: `main.py`
-
 ## Team: Heavy Coders
 - **Pratham Bisht**
 - **Keshav Kushwaha**
