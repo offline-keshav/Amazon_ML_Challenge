@@ -8,10 +8,6 @@ from io import BytesIO
 from modules.text import *
 from modules.feat import *
 
-# Import your existing modules
-# from modules.text import *
-# from modules.feat import *
-
 # Dummy implementation for the predictor function
 # Replace it with your actual implementation
 def predictor(image_link, entity_name):
@@ -29,17 +25,29 @@ def predictor(image_link, entity_name):
         print(f"Error processing {image_link}: {e}")
         return None
 
-# Function to process the input CSV and generate predictions
+# Function to process the input CSV and generate predictions with descriptive progress
 def process_csv(input_df):
     processed_data = []
-    
+    progress_bar = st.progress(0)  # Initialize progress bar
+    status_text = st.empty()  # Placeholder for status text
+
+    total_rows = len(input_df)
+
     # Iterate through each row in the DataFrame
     for index, row in input_df.iterrows():
         prediction = predictor(row['image_link'], row['entity_name'])
         processed_data.append([row['index'], prediction])
 
+        # Update progress bar and status text
+        progress_percentage = int((index + 1) / total_rows * 100)
+        progress_bar.progress(progress_percentage)
+        status_text.text(f"Processing row {index + 1} of {total_rows}")
+
     # Convert results to DataFrame
     output_df = pd.DataFrame(processed_data, columns=['index', 'prediction'])
+
+    # Clear status text after completion
+    status_text.text("Processing complete!")
     return output_df
 
 # Streamlit UI
