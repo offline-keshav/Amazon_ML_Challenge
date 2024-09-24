@@ -40,8 +40,8 @@ Follow these steps to set up and run the project locally:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/<your-repo-url>
-   cd <your-repo-directory>
+   git clone https://github.com/offline-keshav/Amazon_ML_Challenge.git
+   cd Amazon_ML_Challenge
    ```
 
 2. **Install the required dependencies**:
