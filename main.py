@@ -13,7 +13,7 @@ from tqdm import tqdm
 from modules.text import *
 from modules.feat import *
 
-def predictor(image_link, category_id, entity_name):
+def predictor(image_link, entity_name):
     '''
     Call your model/approach here
     '''
@@ -54,7 +54,7 @@ if __name__ == "__main__":
     # Wrapping iterrows() with tqdm to show the progress bar
     for i, row in tqdm(test.iterrows(), total=len(test), desc="Processing rows"):
         try:
-            prediction = predictor(row['image_link'], row['group_id'], row['entity_name'])
+            prediction = predictor(row['image_link'], row['entity_name'])
             new_row = pd.DataFrame({'index': [row['index']], 'prediction': [prediction]})
 
             # Use pd.concat instead of append
