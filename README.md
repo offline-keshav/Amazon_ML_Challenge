@@ -38,11 +38,14 @@ The app is designed for ease of use. You can upload product images for text extr
 
 Follow these steps to set up and run the project locally:
 
-1. **Clone the repository**:
+1. **Clone the Repository**:
+   Open your terminal or command prompt and execute the following commands:
+
    ```bash
    git clone https://github.com/offline-keshav/Amazon_ML_Challenge.git
    cd Amazon_ML_Challenge
    ```
+
 
 2. **Install the required dependencies**:
    Install the dependencies from the `requirements.txt` file:
