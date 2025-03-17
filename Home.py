@@ -11,8 +11,8 @@ st.sidebar.success("Select a page above.")
 st.write("""### Project Overview: Image-to-Text Extraction and Unit-Value Prediction
 
 **Developed by:**
+- **Keshav Kushwaha(Team Lead)** [GitHub](https://github.com/offline-keshav)
 - **Pratham Bisht** [GitHub](https://github.com/Pratham216)
-- **Keshav Kushwaha** [GitHub](https://github.com/offline-keshav)
 - **Ritik Gupta** [GitHub](https://github.com/guptaritik17)
 
 Welcome to **Heavy Coders'** image processing project! This application leverages **Optical Character Recognition (OCR)** to extract text from product images and automatically identify key unit-value pairs such as width, weight, and more.
