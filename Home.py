@@ -11,7 +11,7 @@ st.sidebar.success("Select a page above.")
 st.write("""### Project Overview: Image-to-Text Extraction and Unit-Value Prediction
 
 **Developed by:**
-- **Keshav Kushwaha(Team Lead)** [GitHub](https://github.com/offline-keshav)
+- **Keshav Kushwaha ( Team Lead )** [GitHub](https://github.com/offline-keshav)
 - **Pratham Bisht** [GitHub](https://github.com/Pratham216)
 - **Ritik Gupta** [GitHub](https://github.com/guptaritik17)
 
